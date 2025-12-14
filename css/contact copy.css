@@ -1,0 +1,160 @@
+#contact{
+    background-color: #A57C65;
+    
+}
+/* --- Global Styles for the Section --- */
+#contact-section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    /* Soft, elegant background color */
+    background-color: #f8f8f8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    /* Elegant soft shadow for the whole container */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px;
+    overflow: hidden; /* To keep border-radius clean */
+    background-color: #ffffff;
+}
+
+/* --- Contact Info Panel (Left Side) --- */
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    /* background: linear-gradient(180deg, darkred,#FE28A2);   */
+    background-color: darkred;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.info-details {
+    margin-top: 30px;
+    font-size: 0.95rem;
+}
+
+
+/* --- Form Styles (Right Side) --- */
+.contact-form {
+    flex: 1.5;
+    padding: 50px;
+}
+
+.form-group {
+    position: relative; /* Key for the floating label */
+    margin-bottom: 30px;
+}
+
+/* Base styles for all inputs/textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    transition: border-bottom-color 0.3s ease;
+    background: transparent;
+}
+
+/* Hover and Focus effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #4a69bd; /* Elegant focus color */
+}
+
+/* Label Styles (The floating part) */
+.form-group label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #888;
+    font-size: 1rem;
+    pointer-events: none; /* Allows clicks to go through to the input */
+    transition: all 0.3s ease;
+}
+
+/* The floating label transition */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -10px; /* Moves label up */
+    font-size: 0.8rem;
+    color: #4a69bd; /* Changes color when active */
+}
+
+/* Special fix for textarea which needs a smaller vertical margin */
+.form-group textarea {
+    resize: none;
+    padding-bottom: 5px;
+}
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -15px;
+}
+
+
+/* --- Submit Button --- */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a69bd;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #3b55a0;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 850px) {
+    .contact-container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+    
+    .contact-info {
+        padding: 30px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+}

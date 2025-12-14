@@ -1,0 +1,8 @@
+#about{
+    background-color: gainsboro;
+}
+.about-content{
+     text-align: justify;
+     font-family: "Delius", cursive;
+     font-size: 2.2 rem;
+}
