@@ -1,0 +1,31 @@
+      html {
+          /* This single property enables smooth scrolling for all anchor links */
+          scroll-behavior: smooth;
+      }
+
+      /* Optional: Add padding for fixed headers */
+      body {
+          padding-top: 60px;
+          /* Adjust if you have a fixed header that is 60px tall */
+      }
+
+      .section {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 80px 20px;
+      }
+
+      .dm-serif-text-regular {
+          font-family: "DM Serif Text", serif;
+          font-weight: 400;
+          font-style: normal;
+      }
+
+      .delius-regular {
+          font-family: "Delius", cursive;
+          font-weight: 400;
+          font-style: normal;
+      }
