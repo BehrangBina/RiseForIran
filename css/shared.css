@@ -61,39 +61,40 @@ body {
      }
 }
 
-.nav {
-      position: fixed; /* sit over hero */
-      top: 0; left: 0; right: 0;
-      height: var(--nav-height);
-      display: grid;
-      align-items: center;
-      z-index: 50;
-      padding: 0 1rem;
-      transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
-    }
+@keyframes dropIn {
+     0% {
+          opacity: 0;
+          transform: translateY(-50px);
+          color: red
+     }
 
-    /* Transparent style with blur */
-    .nav.is-transparent {
-      background: var(--blur-bg);
-      -webkit-backdrop-filter: saturate(1.2) blur(10px);
-      backdrop-filter: saturate(1.2) blur(10px); 
-      border-bottom: 1px solid var(--border);
-    }
+     60% {
+          opacity: 1;
+          transform: translateY(20px);
+          color: green
+     }
 
-    /* Solid style after scroll */
-    .nav.is-solid {
-      background: var(--solid-bg);
-      box-shadow: var(--shadow);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      -webkit-backdrop-filter: none;
-      backdrop-filter: none;
-    }
+     100% {
+          opacity: 1;
+          transform: translateY(0);
+          color: smokewhite;
+     }
+}
 
-    .nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 1rem;
-      align-items: center;
-    }
+@keyframes dropfromBottom {
+     0% {
+          opacity: 0;
+          transform: translateY(50px);
+     }
+
+     60% {
+          opacity: 1;
+          transform: translateY(-20px);
+          /* slight overshoot for natural feel */
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
