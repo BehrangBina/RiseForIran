@@ -1,0 +1,99 @@
+html {
+     scroll-behavior: smooth;
+     scrollbar-color: rgba(179, 29, 29, 0.98) rgba(15, 23, 42, 0.18);
+}
+
+html,
+body {
+     margin: 0;
+     padding: 0;
+     font-family: system-ui, -apple-system, 'Segoe UI', Robotto, Arial, sans-serif;
+     color: #ffffff;
+     background-color: #0b1021;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+.dm-serif-text-regular {
+     font-family: "DM Serif Text", serif;
+     font-weight: 400;
+     font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+     font-family: "DM Serif Text", serif;
+     font-weight: 400;
+     font-style: italic;
+}
+
+.oneFive {
+     font-size: 1.5rem;
+}
+
+.fullheight {
+     height: 100vh;
+}
+
+:root {
+     --nav-height: 64px;
+     --brand: #ffffff;
+     --link: #ffffff;
+     --link-muted: #e5e7eb;
+     --solid-bg: rgba(15, 23, 42, 0.25);
+     --blur-bg: rgba(15, 23, 42, 0.25);
+     --border: rgba(255, 255, 255, 0.18);
+     --shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes gradient-pan {
+     0% {
+          background-position: 0% 50% center;
+     }
+
+     50% {
+          background-position: 100% 50% center;
+     }
+
+     100% {
+          background-position: 0% 50% center;
+     }
+}
+
+.nav {
+      position: fixed; /* sit over hero */
+      top: 0; left: 0; right: 0;
+      height: var(--nav-height);
+      display: grid;
+      align-items: center;
+      z-index: 50;
+      padding: 0 1rem;
+      transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
+    }
+
+    /* Transparent style with blur */
+    .nav.is-transparent {
+      background: var(--blur-bg);
+      -webkit-backdrop-filter: saturate(1.2) blur(10px);
+      backdrop-filter: saturate(1.2) blur(10px); 
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Solid style after scroll */
+    .nav.is-solid {
+      background: var(--solid-bg);
+      box-shadow: var(--shadow);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+      align-items: center;
+    }
