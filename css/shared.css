@@ -31,6 +31,16 @@ body {
 .oneFive {
      font-size: 1.5rem;
 }
+.purpose {
+     font-size: 1.1rem;
+     color: whitesmoke;
+      line-height: 1.7;
+}
+hr {
+  height: 4px;
+  background-color: whitesmoke; /* or any color */
+  border: none;
+}
 
 .fullheight {
      height: 100vh;
@@ -45,6 +55,13 @@ body {
      --blur-bg: rgba(15, 23, 42, 0.25);
      --border: rgba(255, 255, 255, 0.18);
      --shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+.mt80{
+     margin-top: 80px;
+}
+.justify{
+      text-align: justify;
+     text-align-last: justify;
 }
 
 @keyframes gradient-pan {
@@ -65,19 +82,20 @@ body {
      0% {
           opacity: 0;
           transform: translateY(-50px);
-          color: red
+          color:   green;
+
      }
 
      60% {
           opacity: 1;
           transform: translateY(20px);
-          color: green
+          color: darkgreen
      }
 
      100% {
           opacity: 1;
           transform: translateY(0);
-          color: smokewhite;
+          color: black;
      }
 }
 

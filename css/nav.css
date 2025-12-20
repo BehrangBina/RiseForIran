@@ -1,37 +1,88 @@
-
 .nav {
-      position: fixed; /* sit over hero */
-      top: 0; left: 0; right: 0;
-      height: var(--nav-height);
-      display: grid;
-      align-items: center;
-      z-index: 50;
-      padding: 0 1rem;
-      transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
-    }
+  position: fixed;
+  /* sit over hero */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  display: grid;
+  align-items: center;
+  z-index: 50;
+  padding: 0 1rem;
+  transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
+}
 
-    /* Transparent style with blur */
-    .nav.is-transparent {
-      background: var(--blur-bg);
-      -webkit-backdrop-filter: saturate(1.2) blur(10px);
-      backdrop-filter: saturate(1.2) blur(10px); 
-      border-bottom: 1px solid var(--border);
-    }
+/* Transparent style with blur */
+.nav.is-transparent {
+  background: var(--blur-bg);
+  -webkit-backdrop-filter: saturate(1.2) blur(10px);
+  backdrop-filter: saturate(1.2) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
 
-    /* Solid style after scroll */
-    .nav.is-solid {
-      background: var(--solid-bg);
-      box-shadow: var(--shadow);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      -webkit-backdrop-filter: none;
-      backdrop-filter: none;
-    }
+/* Solid style after scroll */
+.nav.is-solid {
+  background: var(--solid-bg);
+  box-shadow: var(--shadow);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
 
-    .nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 1rem;
-      align-items: center;
-    }
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: var(--link);
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: var(--link);
+  text-decoration: none;
+  padding: .5rem .75rem;
+  border-radius: .5rem;
+  transition: background .2s ease, color .2s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* CTA / right-side actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: .01em;
+}

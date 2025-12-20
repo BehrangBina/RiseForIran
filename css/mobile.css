@@ -1,0 +1,100 @@
+    @media (max-width: 900px) {
+        .nav-inner {
+            grid-template-columns: auto auto auto;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .menu-toggle {
+            display: inline-flex;
+        }
+
+        .nav.open .nav-links {
+            display: flex;
+            position: absolute;
+            top: var(--nav-height);
+            left: 0;
+            right: 0;
+            padding: .75rem 1rem 1rem;
+            flex-direction: column;
+            gap: .25rem;
+            background: var(--solid-bg);
+            /* solid for clarity on mobile */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .nav.open .nav-links a {
+            padding: .75rem 1rem;
+        }
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+        .hero {
+            animation: none;
+        }
+
+        .nav,
+        .btn {
+            transition: none;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .nav-inner {
+            grid-template-columns: auto auto auto;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .menu-toggle {
+            display: inline-flex;
+        }
+
+        .nav.open .nav-links {
+            display: flex;
+            position: absolute;
+            top: var(--nav-height);
+            left: 0;
+            right: 0;
+            padding: .75rem 1rem 1rem;
+            flex-direction: column;
+            gap: .25rem;
+            background: var(--solid-bg);
+            /* solid for clarity on mobile */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .nav.open .nav-links a {
+            padding: .75rem 1rem;
+        }
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+        .hero {
+            animation: none;
+        }
+
+        .nav,
+        .btn {
+            transition: none;
+        }
+    }
+
+    .info-section {
+        height: 100vh;
+        background-color: #0f172a;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .hero-title {
+            animation: none;
+            opacity: 1;
+            transform: none;
+        }
+    }
