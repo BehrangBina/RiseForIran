@@ -1,0 +1,24 @@
+#contact{
+     
+}
+.send-message{
+display: inline-block;
+  padding: 10px 20px;
+  background-color: #111010;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-weight: bolder;
+  z-index: 15;
+}
+.fa-instagram{
+  color: #FD1D1D;
+}
+.ft{
+ 
+  text-decoration: none;
+  color: inherit;
+
+
+}

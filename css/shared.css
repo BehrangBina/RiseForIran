@@ -15,7 +15,7 @@ body {
 * {
      box-sizing: border-box;
 }
-
+ 
 .dm-serif-text-regular {
      font-family: "DM Serif Text", serif;
      font-weight: 400;
@@ -28,8 +28,8 @@ body {
      font-style: italic;
 }
 
-.oneFive {
-     font-size: 1.5rem;
+.onetwo {
+     font-size: 1.2rem;
 }
 .purpose {
      font-size: 1.1rem;
