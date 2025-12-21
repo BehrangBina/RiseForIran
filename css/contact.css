@@ -1,24 +1,164 @@
 #contact{
-     
+  padding: 20px 0;
 }
+
+.contact-section {
+  padding: 20px 0;
+}
+
 .send-message{
-display: inline-block;
+  display: inline-block;
   padding: 10px 20px;
   background-color: #111010;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  font-weight: bolder;
   z-index: 15;
+  transition: all 0.3s ease;
 }
+
+.send-message:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
 .fa-instagram{
   color: #FD1D1D;
+  transition: transform 0.3s ease;
 }
+
+.fa-instagram:hover,
+.fa-telegram:hover {
+  transform: scale(1.1);
+}
+
+.fa-telegram {
+  color: #0088cc;
+}
+
 .ft{
- 
   text-decoration: none;
   color: inherit;
+  display: inline-block;
+  margin: 0 10px;
+}
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  #contact {
+    padding: 15px 0;
+  }
 
+  .hero-box {
+    padding: 15px !important;
+    margin: 0 10px;
+  }
+
+  .hero-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-box h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-box p {
+    font-size: 0.9rem;
+  }
+
+  .send-message {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .d-flex.justify-content-center {
+    gap: 2rem !important;
+  }
+
+  .fa-instagram,
+  .fa-telegram {
+    font-size: 2rem !important;
+  }
+
+  /* Footer Mobile */
+  footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  footer h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  footer .small {
+    font-size: 0.85rem;
+  }
+
+  footer ul li {
+    margin-bottom: 8px;
+  }
+
+  .ft {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 10px 0;
+  }
+
+  .hero-box {
+    padding: 10px !important;
+  }
+
+  .hero-box h3 {
+    font-size: 1rem;
+  }
+
+  .hero-box h5 {
+    font-size: 0.9rem;
+  }
+
+  .hero-box pre {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+
+  .send-message {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .d-flex.justify-content-center {
+    gap: 1.5rem !important;
+    flex-wrap: wrap;
+  }
+
+  .fa-instagram,
+  .fa-telegram {
+    font-size: 1.5rem !important;
+  }
+
+  footer .col-md-4 {
+    margin-bottom: 15px;
+  }
+
+  footer h5 {
+    font-size: 1rem;
+  }
+
+  footer .small {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .ft {
+    margin: 0 5px;
+  }
 }
