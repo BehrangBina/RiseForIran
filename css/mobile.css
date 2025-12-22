@@ -98,3 +98,10 @@
             transform: none;
         }
     }
+
+    @media (max-width: 435px) {
+        #statements{
+            margin-top: 400px;
+             
+        }
+    }
