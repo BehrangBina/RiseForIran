@@ -139,7 +139,9 @@ hr {
      font-weight: 500;
      min-height: 48px;
      transition: all 0.3s ease;
-     flex-wrap: nowrap;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     position: relative;
 }
 
 .accordion-button:not(.collapsed) {
@@ -160,6 +162,11 @@ hr {
 .accordion-button::after {
      background-color: #ffffff;
      opacity: 0.6;
+     position: absolute;
+     right: 1.5rem;
+     top: 50%;
+     transform: translateY(-50%);
+     margin-left: auto;
 }
 
 .accordion-body {
@@ -192,28 +199,28 @@ hr {
      }
 
      .accordion-button {
-          padding: 1rem 1.25rem;
+          padding: 1rem 3.5rem 1rem 1.25rem;
           min-height: 44px;
           font-size: 0.95rem;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.5rem;
-     }
-
-     .accordion-button.d-flex.justify-content-between {
-          flex-direction: column;
-          align-items: flex-start;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+          flex-wrap: wrap;
      }
 
      .accordion-button h5 {
           font-size: 1rem;
           margin-bottom: 0 !important;
+          flex: 1 1 auto;
+          word-break: break-word;
      }
 
      .date {
-          align-self: flex-start;
-          margin-left: 0 !important;
+          align-self: center;
+          margin-left: auto !important;
+          margin-right: 2.5rem;
           font-size: 0.85rem;
+          white-space: nowrap;
      }
 
      .accordion-body {
@@ -248,18 +255,29 @@ hr {
      }
 
      .accordion-button {
-          padding: 0.875rem 1rem;
+          padding: 0.875rem 3rem 0.875rem 1rem;
           font-size: 0.9rem;
           min-height: 42px;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 0.5rem;
      }
 
      .accordion-button h5 {
           font-size: 0.9rem;
           font-weight: 600;
+          margin-bottom: 0 !important;
+          flex: 1 1 auto;
+          word-break: break-word;
      }
 
      .date {
           font-size: 0.75rem;
+          margin-left: auto !important;
+          margin-right: 2rem;
+          align-self: center;
+          white-space: nowrap;
      }
 
      .accordion-body {
