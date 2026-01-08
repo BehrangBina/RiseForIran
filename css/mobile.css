@@ -105,3 +105,16 @@
              
         }
     }
+      @media (max-width: 576px) {
+    .carousel-caption {
+      bottom: 10%;
+      text-align: center;
+    }
+    .carousel-caption h4 a {
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+    }
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
