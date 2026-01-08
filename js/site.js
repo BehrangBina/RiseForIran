@@ -41,4 +41,12 @@ document.getElementById('primaryLinks').addEventListener('click', (e) => {
 });
 
 
+  document.getElementById("downloadTrigger").addEventListener("click", function () {
+    // Delay slightly so the download starts first
+    setTimeout(function () {
+      var modal = new bootstrap.Modal(document.getElementById('socialModal'));
+      modal.show();
+    }, 500);
+  });
+
  
