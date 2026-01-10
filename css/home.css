@@ -1,0 +1,37 @@
+/* Make the hero carousel full viewport height */
+html, body {
+	height: 100%;
+}
+
+#heroCarousel,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+	height: 100vh;
+}
+
+#heroCarousel .hero-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+}
+
+/* Keep captions readable when image is full height */
+#heroCarousel .carousel-caption {
+	bottom: 18%;
+}
+
+/* Small screens: let mobile address browser chrome but keep tall feel */
+@media (max-width: 576px) {
+	#heroCarousel,
+	#heroCarousel .carousel-inner,
+	#heroCarousel .carousel-item {
+		height: 100vh;
+	}
+}
+
+/* Utility: focus image on bottom-right. Use by adding the class to an <img>. */
+.object-bottom-right {
+	object-position: right bottom !important;
+}
