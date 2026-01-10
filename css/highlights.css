@@ -1,3 +1,10 @@
 .highlights-page {
     background-color: #c1c4c7;
 }
+.highlights-page .card img {
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.highlights-page .card img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}           

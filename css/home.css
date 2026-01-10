@@ -1,4 +1,9 @@
 /* Make the hero carousel full viewport height */
+html {
+     scroll-behavior: smooth;
+     scrollbar-color: rgba(70, 162, 185, 0.95) ! rgba(15, 23, 42, 0.18);
+}
+
 html, body {
   height: 100% !important;
 }
