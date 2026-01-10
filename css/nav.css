@@ -1,0 +1,8 @@
+#siteNav{
+    background-color: rgba(70, 162, 185, 0.95) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav a{
+    color: #fff !important;
+    font-weight: 600;
+}
