@@ -1,14 +1,17 @@
- (function () {
-      var toggler = document.querySelector('.navbar-toggler');
-      var collapse = document.getElementById('primaryLinks');
-      if (!toggler || !collapse) return;
-      toggler.addEventListener('click', function (e) {
-        e.preventDefault();
-        collapse.classList.toggle('show');
-        var expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', (!expanded).toString());
-      });
+// Add a manual navbar toggler only when Bootstrap's Collapse plugin is not available
+if (typeof bootstrap === 'undefined' || !bootstrap.Collapse) {
+    (function () {
+        var toggler = document.querySelector('.navbar-toggler');
+        var collapse = document.getElementById('primaryLinks');
+        if (!toggler || !collapse) return;
+        toggler.addEventListener('click', function (e) {
+            e.preventDefault();
+            collapse.classList.toggle('show');
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', (!expanded).toString());
+        });
     })();
+}
 
      (function () {
             var downloadLinks = document.querySelectorAll('a[download]');
